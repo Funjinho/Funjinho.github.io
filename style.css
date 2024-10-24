@@ -1,54 +1,67 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: url(./pattern1.jfif)
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url(./pattern1.jfif);
 }
 
 h1.title {
-    font-family: 'Segoe UI';
-    font-size: 50px;
-    font-weight: lighter;
-    width: 300px;
-    text-align: center;
-    float: inline-end;
-    margin-right: 30%;
+  font-family: "Segoe UI";
+  font-size: 50px;
+  font-weight: lighter;
+  width: 300px;
+  text-align: center;
+  float: inline-end;
+  margin-right: 30%;
 }
 
+
 nav {
-    width: 20%;
-    /* background-image: url("./flowerpattern.jfif"); */
-    height: 100%;
-    background-color: brown;
-    float: left;
-    position: fixed;
-    border-radius: 10px;
+  width: 20%;
+  /* background-image: url("./flowerpattern.jfif"); */
+  height: 100%;
+  background-color: rgba(165, 42, 42, 0.656);
+  float: left;
+  position: fixed;
+  border-radius: 10px;
+}
+
+nav:hover {
+  background-color: rgb(165, 42, 42);
 }
 
 nav ul {
-    text-align: center;
+  text-align: center;
 }
 
 nav li {
-    padding: 20px 30px;
-    margin: 10px;
-    background-color: khaki;
-    list-style: none;
-    width: 250px;
-    text-align: left;
-    border: 1px solid brown;
-    border-radius: 10px;
-    font-size: 20px;
+  text-align: center;
+  padding: 20px 30px;
+  margin: 25%;
+  background-color: rgba(240, 230, 140, 0.652);
+  list-style: none;
+  width: 100%;
+  text-align: center;
+  border: 1px solid rgba(201, 17, 17, 0.981);
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+nav li:hover {
+  background-color: rgb(240, 230, 140);
 }
 
 .intro p {
-    color: rgb(3, 15, 10);
-    width: 50%;
-    background-color: beige;
-    display: inline-block;
-    border: 1px solid black;
-    padding: 20px;
-    border-radius: 10px;
-    margin-left: 500px;
-    position: static;
+  color: rgb(3, 15, 10);
+  width: 50%;
+  background-color: rgba(41, 183, 138, 0.627);
+  display: inline-block;
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 10px;
+  margin-left: 500px;
+  position: static;
+}
 
-
+.intro p:hover {
+    background-color: rgb(41, 183, 138);
+    padding: 30px;
 }
