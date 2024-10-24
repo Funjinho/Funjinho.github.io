@@ -7,10 +7,10 @@ h1.title {
   font-family: "Segoe UI";
   font-size: 50px;
   font-weight: lighter;
-  width: 300px;
+  width: 30%;
   text-align: center;
-  float: inline-end;
-  margin-right: 30%;
+  /* float: inline-end; */
+  margin-left: 40%;
 }
 
 
@@ -51,14 +51,13 @@ nav li:hover {
 
 .intro p {
   color: rgb(3, 15, 10);
-  width: 50%;
+  width: 40%;
   background-color: rgba(41, 183, 138, 0.627);
   display: inline-block;
   border: 1px solid black;
   padding: 20px;
   border-radius: 10px;
-  margin-left: 500px;
-  position: static;
+  margin: 10% 35%;
 }
 
 .intro p:hover {
