@@ -1,9 +1,12 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(./pattern1.jfif)
 }
 
 h1.title {
-    
+    font-family: 'Segoe UI';
+    font-size: 50px;
+    font-weight: lighter;
     width: 300px;
     text-align: center;
     float: inline-end;
@@ -12,6 +15,7 @@ h1.title {
 
 nav {
     width: 20%;
+    /* background-image: url("./flowerpattern.jfif"); */
     height: 100%;
     background-color: brown;
     float: left;
@@ -25,10 +29,26 @@ nav ul {
 
 nav li {
     padding: 20px 30px;
-    background-color: rgb(210, 146, 17);
+    margin: 10px;
+    background-color: khaki;
     list-style: none;
     width: 250px;
     text-align: left;
-    border: 2px solid brown;
+    border: 1px solid brown;
     border-radius: 10px;
+    font-size: 20px;
+}
+
+.intro p {
+    color: rgb(3, 15, 10);
+    width: 50%;
+    background-color: beige;
+    display: inline-block;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 500px;
+    position: static;
+
+
 }
