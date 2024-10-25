@@ -69,3 +69,7 @@ nav li:hover {
 .intro p:hover {
   background-color: rgb(41, 183, 138);
 }
+
+nav a {
+    text-decoration: none;
+  }
