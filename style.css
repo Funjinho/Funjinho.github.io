@@ -33,7 +33,7 @@ nav ul {
 
 nav li {
   text-align: center;
-  padding: 20px;
+  padding: 1.5rem;
   margin: 25%;
   background-color: rgba(240, 230, 140, 0.652);
   list-style: none;
@@ -41,7 +41,7 @@ nav li {
   text-align: center;
   border: 1px solid rgba(201, 17, 17, 0.981);
   border-radius: 10px;
-  font-size: 20px;
+  font-size: 1rem;
 }
 
 nav li:hover {
@@ -61,7 +61,7 @@ nav li:hover {
   background-color: rgba(41, 183, 138, 0.627);
   display: inline-block;
   border: 1px solid black;
-  padding: 20px;
+  padding: 1rem;
   border-radius: 10px;
   margin: 8% 30%;
   line-height: 150%;
