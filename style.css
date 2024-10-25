@@ -13,7 +13,6 @@ h1.title {
   margin-left: 40%;
 }
 
-
 nav {
   width: 15%;
   /* background-image: url("./flowerpattern.jfif"); */
@@ -52,8 +51,8 @@ nav li:hover {
 }
 
 .intro {
-    width: 70%;
-    margin: 0 auto;
+  width: 70%;
+  margin: 0 auto;
 }
 
 .intro p {
@@ -68,7 +67,5 @@ nav li:hover {
 }
 
 .intro p:hover {
-    background-color: rgb(41, 183, 138);
+  background-color: rgb(41, 183, 138);
 }
-
-
