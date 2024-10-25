@@ -1,12 +1,12 @@
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Exo 2', Tahoma, Geneva, Verdana, sans-serif;
   background-image: url(./pattern1.jfif);
 }
 
 h1.title {
-  font-family: "Segoe UI";
+  font-family: 'Exo 2';
   font-size: 50px;
-  font-weight: lighter;
+  font-weight: normal;
   width: 30%;
   text-align: center;
   /* float: inline-end; */
@@ -64,12 +64,17 @@ nav li:hover {
   padding: 20px;
   border-radius: 10px;
   margin: 8% 30%;
+  line-height: 150%;
 }
 
 .intro p:hover {
-  background-color: rgb(41, 183, 138);
+  background-color: rgb(14, 235, 165);
 }
 
 nav a {
     text-decoration: none;
   }
+
+nav a:hover{
+    color: rgb(7, 103, 32);
+}
