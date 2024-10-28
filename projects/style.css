@@ -8,10 +8,48 @@ h1 {
    margin: 0 auto; 
 }
 
-table {
-    width: 30%;
-    margin: 30px auto;
+nav {
+    width: 50%;
+    display: flex;
+    background-color: brown;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 25%;
 
+}
+
+nav li {
+    display: inline-flex;
+    justify-content: center;
+    
+
+}
+
+div {
+    background-color: bisque;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-grow: 1;
+    
+}
+table {
+    background-color: white;
+    width: 30%;
+    height: 100%;
+    margin: 2% auto;
+
+}
+
+table thead td {
+    background-color: goldenrod;
+    font-weight: bold;
+    font-family: "Roboto";
+    font-size: 20px;
 }
 
 th {
@@ -21,9 +59,11 @@ th {
 
 }
 table td { 
+    background-color: rgb(197, 241, 183);
     border: 1px solid black;
-    padding: 10px;
+    padding: 1px;
     text-align: center;
+    
 }
 
 td.property  {

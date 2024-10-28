@@ -21,75 +21,437 @@
       </nav>
       <main class="banner"></main>
     </header>
-    <h1>CSS color</h1>
+
     <div>
       <table>
         <thead>
           <tr>
-            <td colspan="3">CSS Colors</td>
+            <td colspan="3">Background and Colors</td>
+          </tr>
+          <tr>
+            <th>Property</th>
+            <th>Description</th>
           </tr>
         </thead>
-        <tr>
-          <th scope="col">Property</th>
-
-          <th scope="col">Description</th>
-          <th scope="col">Sample</th>
-        </tr>
-        <tr>
-          <td class="property">color</td>
-          <td>sets foreground color</td>
-          <td class="sample1">colored text</td>
-        </tr>
-        <tr>
-          <td class="property">background-color</td>
-          <td>sets background color</td>
-          <td class="sample2">colored background</td>
-        </tr>
+        <tbody>
+          <tr>
+            <td><code>background-color</code></td>
+            <td>
+              Specifies the background color of an element. Can use color names,
+              hex codes, RGB, or HSL.
+            </td>
+          </tr>
+          <tr>
+            <td><code>background-image</code></td>
+            <td>
+              Specifies an image to use as the background for an element. Can
+              use <code>url()</code> to specify the image source.
+            </td>
+          </tr>
+          <tr>
+            <td><code>background-size</code></td>
+            <td>
+              Specifies the size of the background image. Common values are
+              <code>cover</code>, <code>contain</code>, or specific dimensions
+              (e.g., <code>100% 100%</code>).
+            </td>
+          </tr>
+          <tr>
+            <td><code>background-position</code></td>
+            <td>
+              Specifies the starting position of the background image. Common
+              values are <code>center</code>, <code>top</code>,
+              <code>bottom</code>, or specific coordinates (e.g.,
+              <code>50% 50%</code>).
+            </td>
+          </tr>
+          <tr>
+            <td><code>background-repeat</code></td>
+            <td>
+              Specifies whether and how the background image is repeated. Common
+              values are <code>repeat</code>, <code>no-repeat</code>,
+              <code>repeat-x</code>, and <code>repeat-y</code>.
+            </td>
+          </tr>
+          <tr>
+            <td><code>opacity</code></td>
+            <td>
+              Specifies the transparency level of an element. Can be a value
+              between <code>0</code> (fully transparent) and
+              <code>1</code> (fully opaque).
+            </td>
+          </tr>
+          <tr>
+            <td><code>color</code></td>
+            <td>
+              Specifies the color of text. Can use color names, hex codes, RGB,
+              or HSL values.
+            </td>
+          </tr>
+        </tbody>
       </table>
-    </div>
 
-    <h1>CSS fonts</h1>
-    <div>
       <table>
         <thead>
           <tr>
-            <td colspan="3">CSS fonts</td>
+            <td colspan="3">Typography and Text Styling</td>
+          </tr>
+          <tr>
+            <th>Property</th>
+            <th>Description</th>
           </tr>
         </thead>
-        <tr>
-          <th scope="col">Property</th>
-
-          <th scope="col">Description</th>
-          <th scope="col">Sample</th>
-        </tr>
-        <tr>
-          <td class="property">font-size</td>
-          <td>sets font size</td>
-          <td class="sample3">font-size 32px</td>
-        </tr>
-        <tr>
-          <td class="property">font-weight</td>
-          <td>sets font bold</td>
-          <td class="sample4">Bold font</td>
-        </tr>
-        <tr>
-          <td class="property">font-family</td>
-          <td>changes font type</td>
-          <td class="sample5">Verdana</td>
-        </tr>
-        <tr>
-          <td class="property">font-style</td>
-          <td>normal, italic, oblique</td>
-          <td class="sample6">italic</td>
-        </tr>
+        <tbody>
+          <tr>
+            <td><code>font-family</code></td>
+            <td>
+              Specifies the font family for text, e.g.,
+              <code>'Arial', sans-serif</code>. You can define fallback fonts.
+            </td>
+          </tr>
+          <tr>
+            <td><code>font-size</code></td>
+            <td>
+              Specifies the size of the font. Can use values like
+              <code>px</code>, <code>em</code>, <code>rem</code>, or
+              percentages.
+            </td>
+          </tr>
+          <tr>
+            <td><code>font-weight</code></td>
+            <td>
+              Specifies the thickness or boldness of text, using values like
+              <code>normal</code>, <code>bold</code>, or numeric values (e.g.,
+              100 to 900).
+            </td>
+          </tr>
+          <tr>
+            <td><code>font-style</code></td>
+            <td>
+              Specifies whether the text is italic or normal. Common values are
+              <code>normal</code>, <code>italic</code>, and
+              <code>oblique</code>.
+            </td>
+          </tr>
+          <tr>
+            <td><code>text-align</code></td>
+            <td>
+              Specifies the alignment of text within an element. Common values
+              are <code>left</code>, <code>right</code>, <code>center</code>,
+              and <code>justify</code>.
+            </td>
+          </tr>
+          <tr>
+            <td><code>line-height</code></td>
+            <td>
+              Specifies the height of a line of text. Can use unitless numbers,
+              <code>px</code>, or <code>em</code>.
+            </td>
+          </tr>
+          <tr>
+            <td><code>text-transform</code></td>
+            <td>
+              Controls the capitalization of text. Common values are
+              <code>uppercase</code>, <code>lowercase</code>, and
+              <code>capitalize</code>.
+            </td>
+          </tr>
+          <tr>
+            <td><code>letter-spacing</code></td>
+            <td>
+              Specifies the space between letters. Can use values in
+              <code>px</code> or <code>em</code>.
+            </td>
+          </tr>
+          <tr>
+            <td><code>word-spacing</code></td>
+            <td>
+              Specifies the space between words. Can use values in
+              <code>px</code> or <code>em</code>.
+            </td>
+          </tr>
+          <tr>
+            <td><code>text-decoration</code></td>
+            <td>
+              Specifies decoration added to text, such as
+              <code>underline</code>, <code>line-through</code>, or
+              <code>none</code>.
+            </td>
+          </tr>
+        </tbody>
       </table>
+
+      <table>
+        <thead>
+          <tr>
+            <td colspan="3">CSS Flex</td>
+          </tr>
+          <tr>
+            <th>Property</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>display: flex</code></td>
+            <td>
+              Changes an element to a block-level container with flex items
+              inside of it.
+            </td>
+          </tr>
+          <tr>
+            <td><code>display: inline-flex</code></td>
+            <td>
+              Allows multiple flex containers to appear inline with each other.
+            </td>
+          </tr>
+          <tr>
+            <td><code>justify-content</code></td>
+            <td>Used to space items along the main axis.</td>
+          </tr>
+          <tr>
+            <td><code>align-items</code></td>
+            <td>Used to space items along the cross axis.</td>
+          </tr>
+          <tr>
+            <td><code>flex-grow</code></td>
+            <td>
+              Specifies how much space (and in what proportions) flex items
+              absorb along the main axis.
+            </td>
+          </tr>
+          <tr>
+            <td><code>flex-shrink</code></td>
+            <td>
+              Specifies how much flex items shrink and in what proportions along
+              the main axis.
+            </td>
+          </tr>
+          <tr>
+            <td><code>flex-basis</code></td>
+            <td>
+              Specifies the initial size of an element styled with
+              <code>flex-grow</code> and/or <code>flex-shrink</code>.
+            </td>
+          </tr>
+          <tr>
+            <td><code>flex</code></td>
+            <td>
+              Specifies <code>flex-grow</code>, <code>flex-shrink</code>, and
+              <code>flex-basis</code> in one declaration.
+            </td>
+          </tr>
+          <tr>
+            <td><code>flex-wrap</code></td>
+            <td>
+              Specifies that elements should shift along the cross axis if the
+              flex container is not large enough.
+            </td>
+          </tr>
+          <tr>
+            <td><code>align-content</code></td>
+            <td>Used to space rows along the cross axis.</td>
+          </tr>
+          <tr>
+            <td><code>flex-direction</code></td>
+            <td>Specifies the main and cross axes.</td>
+          </tr>
+          <tr>
+            <td><code>flex-flow</code></td>
+            <td>
+              Specifies <code>flex-wrap</code> and
+              <code>flex-direction</code> in one declaration.
+            </td>
+          </tr>
+          <tr>
+            <td>Nested Flex Containers</td>
+            <td>
+              Flex containers can be nested inside of each other by declaring
+              <code>display: flex</code> or
+              <code>display: inline-flex</code> for children of flex containers.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table>
+        <thead>
+          <tr>
+            <td colspan="3">CSS margins, borders, etc</td>
+          </tr>
+          <tr>
+            <th>Property</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>margin</code></td>
+            <td>
+              Specifies the outer space around an element. Can set values for
+              top, right, bottom, and left, or use
+              <code>margin</code> shorthand.
+            </td>
+          </tr>
+          <tr>
+            <td><code>padding</code></td>
+            <td>
+              Specifies the inner space between an element's content and its
+              border. Can set individual values for top, right, bottom, and
+              left, or use <code>padding</code> shorthand.
+            </td>
+          </tr>
+          <tr>
+            <td><code>border</code></td>
+            <td>
+              Specifies the border around an element. Includes properties like
+              <code>border-width</code>, <code>border-style</code>, and
+              <code>border-color</code>. <code>border</code> shorthand sets all
+              in one declaration.
+            </td>
+          </tr>
+          <tr>
+            <td><code>width</code></td>
+            <td>
+              Specifies the width of an element, either in a specific unit
+              (e.g., <code>px</code>, <code>%</code>, <code>em</code>), or using
+              relative units.
+            </td>
+          </tr>
+          <tr>
+            <td><code>height</code></td>
+            <td>
+              Specifies the height of an element, either in a specific unit
+              (e.g., <code>px</code>, <code>%</code>, <code>em</code>), or using
+              relative units.
+            </td>
+          </tr>
+          <tr>
+            <td><code>float</code></td>
+            <td>
+              Specifies whether an element should float to the left or right of
+              its container. Often used to wrap text around an element or create
+              sidebars.
+            </td>
+          </tr>
+          <tr>
+            <td><code>clear</code></td>
+            <td>
+              Used in conjunction with <code>float</code>, specifies whether an
+              element should clear floated elements, preventing text or content
+              from wrapping around it.
+            </td>
+          </tr>
+          <tr>
+            <td><code>display</code></td>
+            <td>
+              Specifies how an element is displayed. Common values include
+              <code>block</code>, <code>inline</code>,
+              <code>inline-block</code>, and <code>none</code>.
+            </td>
+          </tr>
+          <tr>
+            <td><code>position</code></td>
+            <td>
+              Specifies how an element is positioned in the document. Common
+              values are <code>static</code>, <code>relative</code>,
+              <code>absolute</code>, <code>fixed</code>, and
+              <code>sticky</code>.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>top</code>, <code>right</code>, <code>bottom</code>,
+              <code>left</code>
+            </td>
+            <td>
+              Specifies the offset from the nearest positioned ancestor or the
+              viewport (depending on <code>position</code> value). Works with
+              <code>absolute</code>, <code>relative</code>, and
+              <code>fixed</code> positioning.
+            </td>
+          </tr>
+          <tr>
+            <td><code>z-index</code></td>
+            <td>
+              Specifies the stack order of an element, controlling which element
+              appears in front of or behind others.
+            </td>
+          </tr>
+          <tr>
+            <td><code>overflow</code></td>
+            <td>
+              Specifies how to handle content that exceeds the dimensions of its
+              container. Common values include <code>visible</code>,
+              <code>hidden</code>, <code>scroll</code>, and <code>auto</code>.
+            </td>
+          </tr>
+          <tr>
+            <td><code>box-sizing</code></td>
+            <td>
+              Specifies how the total width and height of an element are
+              calculated: either including (<code>border-box</code>) or
+              excluding (<code>content-box</code>) padding and border.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- Transitions and Animations -->
+
+      <table>
+        <thead>
+          <tr>
+            <td colspan="3">Transitions and Animations</td>
+          </tr>
+          <tr>
+            <th>Property</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>transition</code></td>
+            <td>Specifies the transition effect when changing from one style to another. Can define the <code>property</code>, <code>duration</code>, <code>timing-function</code>, and <code>delay</code> in one declaration.</td>
+          </tr>
+          <tr>
+            <td><code>transition-property</code></td>
+            <td>Specifies the CSS property that the transition effect applies to (e.g., <code>background-color</code>, <code>width</code>).</td>
+          </tr>
+          <tr>
+            <td><code>transition-duration</code></td>
+            <td>Specifies the length of time the transition takes. Can use values like <code>s</code> or <code>ms</code>.</td>
+          </tr>
+          <tr>
+            <td><code>animation</code></td>
+            <td>Defines an animation using keyframes. Can specify <code>name</code>, <code>duration</code>, <code>timing-function</code>, <code>delay</code>, <code>iteration-count</code>, and more.</td>
+          </tr>
+          <tr>
+            <td><code>keyframes</code></td>
+            <td>Specifies the keyframes for an animation, using percentages (e.g., <code>0%</code>, <code>100%</code>) or keywords like <code>from</code> and <code>to</code>.</td>
+          </tr>
+          <tr>
+            <td><code>animation-delay</code></td>
+            <td>Specifies when the animation will start, either immediately (<code>0s</code>) or after a specified delay.</td>
+          </tr>
+          <tr>
+            <td><code>animation-iteration-count</code></td>
+            <td>Specifies how many times an animation should play. Can be a number or <code>infinite</code> for continuous looping.</td>
+          </tr>
+          <tr>
+            <td><code>animation-direction</code></td>
+            <td>Specifies whether an animation should play in reverse on alternate iterations. Common values are <code>normal</code>, <code>reverse</code>, <code>alternate</code>, and <code>alternate-reverse</code>.</td>
+          </tr>
+        </tbody>
+      </table>
+      <!--  -->
     </div>
+
     <footer>
-        <ul>
-            <li>References</li>
-            <li>Tips</li>
-            <li>Useful links</li>
-        </ul>
+      <ul>
+        <li>References</li>
+        <li>Tips</li>
+        <li>Useful links</li>
+      </ul>
     </footer>
   </body>
 </html>
