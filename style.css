@@ -11,14 +11,14 @@ h1.title {
   text-align: center;
   /* float: inline-end; */
   margin-left: 10em;
-  border: 1em solid black;
+  border: 0.3em solid black;
 }
 
 p {
   font-family: "Roboto";
 }
 nav {
-  width: 10em;
+  width: 12em;
   /* background-image: url("./flowerpattern.jfif"); */
   height: 40em;
   background-color: rgba(165, 42, 42, 0.656);
@@ -55,19 +55,19 @@ nav li:hover {
 }
 
 .intro {
-  width: 70%;
-  margin: 0 auto;
+  width: 22em;
+  margin: 5em 31.5em;
 }
 
 .intro p {
   color: rgb(3, 15, 10);
-  width: 50%;
+  width: 30em;
   background-color: rgba(41, 183, 138, 0.627);
   display: inline-block;
-  border: 1px solid black;
-  padding: 1rem;
+  border: 0.5em solid black;
+  padding: 1em;
   border-radius: 10px;
-  margin: 8% 30%;
+  /* margin: 5em 5em; */
   line-height: 150%;
 }
 
@@ -88,5 +88,12 @@ nav a:hover {
 section.cheatsheet {
   width: 20em;
   margin: 0 auto;
-  border: 1em solid black;
+  border: 0.5em solid black;
+}
+
+
+section.styleguide {
+  width: 20em;
+  margin: 0 auto;
+  border: 0.5em solid black;
 }
