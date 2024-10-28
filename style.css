@@ -5,7 +5,7 @@ body {
 
 h1.title {
   font-family: "Exo 2";
-  font-size: 50px;
+  font-size: 3em;
   font-weight: normal;
   width: 10em;
   text-align: center;
@@ -55,13 +55,13 @@ nav li:hover {
 }
 
 .intro {
-  width: 22em;
-  margin: 5em 31.5em;
+  width: 20em;
+  margin: 5em 28em;
 }
 
 .intro p {
   color: rgb(3, 15, 10);
-  width: 30em;
+  width: 33em;
   background-color: rgba(41, 183, 138, 0.627);
   display: inline-block;
   border: 0.5em solid black;
