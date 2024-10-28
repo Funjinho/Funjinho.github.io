@@ -1,3 +1,104 @@
 body {
-    background-image: url("./media/flowers.jfif");
+    background-color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
 }
+
+h1 {
+    font-family: "Raleway";
+    text-align: center;
+}
+
+section {
+    border: 1px solid black;
+    margin: 5% 5%;
+    
+}
+
+table {
+    width: 70%;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+thead th {
+    background-color: rgb(128, 231, 183);
+}
+th {
+    background-color: rgb(230, 193, 137);
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 5%;
+    text-align: center;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 5%;
+    text-align: center;
+}
+
+.roboto15 {
+    font-family: "Roboto";
+    font-size: 15px;;
+}
+
+
+.raleway36 {
+    font-family: "Raleway";
+    font-size: 36px;
+}
+
+.raleway28 {
+    font-family: "Raleway";
+    font-size: 28px;
+}
+
+.raleway20 {
+    font-family: "Raleway";
+    font-size: 20px;
+}
+
+button {
+    
+    padding: 50px 100px;
+    text-align: center;
+}
+
+button.navcolor {
+    background-color: rgb(159, 27, 27);
+    font-family: "Raleway";
+    font-size: 16px;
+    color: wheat;
+}
+
+button.headercolor {
+    background-color: rgb(172, 143, 102);
+    font-family: "Raleway";
+    font-size: 16px;
+    color: wheat;
+
+}
+
+button.bodycolor {
+    background-color: rgb(218, 205, 205);
+    font-family: "Raleway";
+    font-size: 16px;
+    color: rgb(23, 18, 9);
+}
+
+button.footercolor {
+    background-color: rgb(36, 154, 150);
+    font-family: "Raleway";
+    font-size: 16px;
+    color: rgb(23, 18, 9);
+}
+
+div {
+    display: inline-block;
+    text-align: center;
+}
+

@@ -1,14 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>StyleGuide</title>
-</head>
-<body>
-    <h1>Website Style Guide</h1>
-    
+    <link rel="stylesheet" href="styleguide.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Website Style Guide</h1>
+    </header>
+    <section class="fonts">
+      <h1>Fonts</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Section</th>
+            <th>font</th>
+            <th>size</th>
+            <th>sample</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>body, p</th>
+            <td>Roboto</td>
+            <td>15px</td>
+            <td class="roboto15">
+              The quick brown fox jumps over the lazy dog.
+            </td>
+          </tr>
+          <tr>
+            <th>h1</th>
+            <td>Raleway</td>
+            <td>36px</td>
+            <td class="raleway36">
+              The quick brown fox jumps over the lazy dog.
+            </td>
+          </tr>
+          <tr>
+            <th>h2</th>
+            <td>Raleway</td>
+            <td>28px</td>
+            <td class="raleway28">
+              The quick brown fox jumps over the lazy dog.
+            </td>
+          </tr>
+          <tr>
+            <th>h3</th>
+            <td>Raleway</td>
+            <td>20px</td>
+            <td class="raleway20">
+              The quick brown fox jumps over the lazy dog.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
 
-    
-</body>
+    <section class="colors">
+      <h1>Colors</h1>
+      <div>
+        <button class="navcolor">rgb(159, 27, 27)</button>
+        <p class="navcolor">Blood Red: Navigation menu</p>
+      </div>
+      <div>
+      <button class="headercolor">rgb(172, 143, 102)</button>
+      <p class="navcolor">Cereal: Headers</p>
+    </div>
+
+      <div><button class="bodycolor">rgb(218, 205, 205)</button>
+        <p>Pearl White: body background.</p>
+      </div>
+      <div>
+      <button class="footercolor">rgb(36, 154, 150)</button>
+      <p>Celeste: Footer</p>
+    </div>
+     
+    </section>
+
+    <section class="wireframe"><h1>Wireframe</h1></section>
+  </body>
 </html>
