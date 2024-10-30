@@ -1,0 +1,121 @@
+body {
+  background-color: black;
+  font-family: "Helvetica";
+  font-size: 22px;
+  color: seashell;
+  opacity: 0.9;
+}
+
+div.logo {
+  position: fixed;
+  height: 69px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  color: seashell;
+  opacity: 0.9;
+  border-bottom: 1px solid seashell;
+}
+
+div img.logo {
+  height: 50px;
+  margin-left: 10px;
+  color: seashell;
+  opacity: 0.9;
+}
+
+div ul.nav {
+  margin-right: 10px;
+}
+div ul.nav li {
+  height: 50px;
+  display: inline-block;
+  text-decoration: underline;
+  padding: 10px;
+}
+
+div.main {
+  background-image: url("media/img-mission-background.jpg");
+  align-items: flex-start;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 700px;
+  width: 1200px;
+  margin: 69px 150px;
+}
+
+div.mission {
+  display: inline-flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  height: 150px;
+  width: inherit;
+  color: seashell;
+  opacity: 0.9;
+}
+
+div.brewing footer {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  height: 150px;
+  width: 1000px;
+  margin: 0 auto;
+  color: seashell;
+  opacity: 0.9;
+}
+
+div.caroussel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 1200px;
+  /* border: 1px solid gold; */
+  margin: auto;
+}
+
+div.caroussel figure img {
+  display: inline-flex;
+  width: 300px;
+  height: 200px;
+}
+div.caroussel figure {
+  display: inline-block;
+  text-align: center;
+}
+
+div.locations {
+  background-image: url(media/img-locations-background.jpg);
+  display: flex;
+  margin: auto;
+  height: 500px;
+  width: 1200px;
+}
+
+h2 {
+    text-align: center;
+    border: 1px solid gold;
+}
+
+
+div.locations ul {
+  width: 250px;
+  background-color: black;
+justify-content: space-around;
+  display: inline-block;
+  list-style: none;
+  align-items: center;
+  margin: auto;
+  line-height: 50px;
+}
