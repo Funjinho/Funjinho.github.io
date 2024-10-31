@@ -133,3 +133,14 @@ div.locations {
     line-height: 50px;
   }
   
+  div.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+  }
+
+  h4.copyright {
+    justify-content: flex-start;
+  }
