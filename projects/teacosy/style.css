@@ -95,27 +95,41 @@ div.caroussel figure {
   text-align: center;
 }
 
+/* Parent container styles */
 div.locations {
-  background-image: url(media/img-locations-background.jpg);
-  display: flex;
-  margin: auto;
-  height: 500px;
-  width: 1200px;
-}
-
-h2 {
+    background-image: url(media/img-locations-background.jpg);
+    height: 500px;
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column; /* Stack h2 and ul vertically */
+    align-items: center; /* Center the items horizontally */
+    justify-content: center; /* Center the content vertically */
+  }
+  
+  /* Center the h2 on its own line */
+  .locations h2 {
     text-align: center;
-    border: 1px solid gold;
-}
-
-
-div.locations ul {
-  width: 250px;
-  background-color: black;
-justify-content: space-around;
-  display: inline-block;
-  list-style: none;
-  align-items: center;
-  margin: auto;
-  line-height: 50px;
-}
+    margin-bottom: 20px;
+  }
+  
+  /* New container for the ul lists */
+  div.locations-lists {
+    display: flex;
+    justify-content: space-between; /* Evenly space the lists */
+    width: 100%;
+    max-width: 900px; /* Optional: restrict width of list container */
+  }
+  
+  /* Styles for the lists */
+  div.locations ul {
+    width: 250px;
+    background-color: black;
+    list-style: none;
+    color: white;
+    padding: 10px;
+    margin: 0 10px;
+    text-align: center;
+    line-height: 50px;
+  }
+  
