@@ -87,16 +87,13 @@ nav a:hover {
 
 section.projects {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   
 }
 
-section.projects figure {
+section.projects figure img {
   width: 200px;
+  height: 100px;
+  border-radius: 5px;
 }
 
-section.styleguide {
-  width: 20em;
-  margin: 0 auto;
-  border: 0.5em solid black;
-}
