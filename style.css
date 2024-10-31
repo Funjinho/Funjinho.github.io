@@ -85,12 +85,15 @@ nav a:hover {
 
 
 
-section.cheatsheet {
-  width: 20em;
-  margin: 0 auto;
-  border: 0.5em solid black;
+section.projects {
+  display: flex;
+  justify-content: space-between;
+  
 }
 
+section.projects figure {
+  width: 200px;
+}
 
 section.styleguide {
   width: 20em;
