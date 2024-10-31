@@ -87,7 +87,9 @@ nav a:hover {
 
 section.projects {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  margin-left: 20%;
+  margin-right: 20%;
   
 }
 
@@ -95,5 +97,15 @@ section.projects figure img {
   width: 200px;
   height: 100px;
   border-radius: 5px;
+}
+
+section.projects img:hover {
+  width: 300px;
+  height: 150px;
+  border-radius: 5px;
+}
+
+section.projects figcaption {
+  text-align: center;
 }
 
