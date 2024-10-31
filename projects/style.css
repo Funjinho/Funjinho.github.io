@@ -97,10 +97,10 @@ td.sample6 {
 
 table td:hover + td {
     font-size: 1.2em;
-    background-color: white;
-    color: rgb(17, 3, 42);
+    background-color: rgb(0, 0, 0);
+    color: rgb(14, 225, 35);
     cursor: pointer;
-    border: 2px solid red;
+    border: 2px solid rgb(42, 226, 18);
 }
 
 code:hover {

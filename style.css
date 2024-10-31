@@ -103,6 +103,7 @@ section.projects img:hover {
   width: 300px;
   height: 150px;
   border-radius: 5px;
+  border: 5px solid rgb(203, 112, 20);
 }
 
 section.projects figcaption {
