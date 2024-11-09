@@ -71,7 +71,8 @@ nav li:hover {
 
 .intro p {
   color: rgb(3, 15, 10);
-  width: 33em;
+  width: 28em;
+  font-size: 22px;
   background-color: rgba(41, 183, 138, 0.627);
   display: inline-block;
   border: 0.5em solid black;
@@ -174,13 +175,15 @@ section.projects figcaption {
   .intro {
     box-sizing: border-box;
     width: 20%;
+    height: fit-content;
     margin: 2em 32%;
   }
   
   .intro p {
-    font-size: 7px;
+    font-size: 10px;
     color: rgb(3, 15, 10);
-    width: 20em;
+    width: 25em;
+    height: fit-content;
     background-color: rgb(41, 183, 138);
     display: inline-block;
     border: 0.5em solid black;
