@@ -130,4 +130,38 @@ section.projects figcaption {
     font-size: 10px;
   }
 
+  h1.title {
+  font-size: 1em;
+  font-weight: normal;
+  width: 3em;
+  position: relative;
+  left: auto;
+  text-align: center;
+  /* float: inline-end; */
+  /* margin-left: 11em; */
+  border: 0.1em solid black;
+  }
+
+  nav {
+    height: 10em;
+    background-color: rgba(165, 42, 42, 0.656);
+    float: left;
+    position: fixed;
+    border-radius: 1px;
+  }
+
+  nav li {
+    text-align: center;
+    padding: 0.5em;
+    margin: 1em;
+    background-color: rgba(240, 230, 140, 0.652);
+    list-style: none;
+    width: 70%;
+    text-align: center;
+    border: 1px solid rgba(201, 17, 17, 0.981);
+    border-radius: 3px;
+    font-size: 0.3em;
+  }
+
+
 }
