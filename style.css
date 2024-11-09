@@ -142,13 +142,15 @@ section.projects figcaption {
   h1.title {
   font-size: 1em;
   font-weight: normal;
-  width: 20%;
+  width: fit-content;
   position: relative;
+  top: 20px;
   left: auto;
   text-align: center;
   /* float: inline-end; */
   /* margin-left: 11em; */
   border: 0.1em solid black;
+  padding: 5px;
   }
 
   nav {
@@ -202,11 +204,12 @@ section.projects figcaption {
     box-sizing: border-box;
     width: 80%;
     height: fit-content;
-    margin: 0 auto;
+    margin: 10px auto;
+    padding: 2px;
   }
   
   .intro p {
-    margin-top: 20px;
+    margin-top: 43px;
     justify-content: center;
     font-size: 16px;
     color: rgb(3, 15, 10);
@@ -214,7 +217,7 @@ section.projects figcaption {
     height: fit-content;
     background-color: rgb(41, 183, 138);
     display: block;
-    border: 0.5em solid black;
+    border: 0.2em solid black;
     padding: 0.3em;
     border-radius: 10px;
     /* margin: 5em 5em; */
