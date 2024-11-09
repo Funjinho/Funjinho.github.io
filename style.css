@@ -136,7 +136,7 @@ section.projects figcaption {
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   /* ruleset for 320px - 480px */
   body {
-    font-size: 10px;
+    font-size: 18px;
   }
 
   h1.title {
@@ -163,7 +163,7 @@ section.projects figcaption {
     display: flex;
     justify-content: center; /* Aligns content within the nav */
     align-items: center;     /* Vertically centers content */
-    top: 62%;
+    top: auto;
 }
 
 
@@ -200,7 +200,7 @@ section.projects figcaption {
   .intro p {
     margin-top: 20px;
     justify-content: center;
-    font-size: 10px;
+    font-size: 16px;
     color: rgb(3, 15, 10);
     width: 100%;
     height: fit-content;
