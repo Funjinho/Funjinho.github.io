@@ -3,14 +3,20 @@ body {
   background-image: url(./pattern1.jfif);
 }
 
+.title {
+  margin: auto;
+
+}
 h1.title {
   font-family: "Exo 2";
   font-size: 3em;
   font-weight: normal;
   width: 10em;
+  position: relative;
+  left: auto;
   text-align: center;
   /* float: inline-end; */
-  margin-left: 11em;
+  /* margin-left: 11em; */
   border: 0.3em solid black;
 }
 
@@ -18,7 +24,7 @@ p {
   font-family: "Roboto";
 }
 nav {
-  width: 12em;
+  width: 10%;
   /* background-image: url("./flowerpattern.jfif"); */
   height: 40em;
   background-color: rgba(165, 42, 42, 0.656);
@@ -41,7 +47,7 @@ nav li {
   margin: 3em;
   background-color: rgba(240, 230, 140, 0.652);
   list-style: none;
-  width: 6em;
+  width: 70%;
   text-align: center;
   border: 1px solid rgba(201, 17, 17, 0.981);
   border-radius: 10px;
@@ -55,8 +61,9 @@ nav li:hover {
 }
 
 .intro {
-  width: 20em;
-  margin: 5em 28em;
+  box-sizing: border-box;
+  width: 50%;
+  margin: 5em 31%;
 }
 
 .intro p {
@@ -88,6 +95,7 @@ nav a:hover {
 section.projects {
   display: flex;
   justify-content: space-between;
+  margin-top: 10%;
   margin-left: 20%;
   margin-right: 20%;
   
@@ -97,6 +105,10 @@ section.projects figure img {
   width: 200px;
   height: 100px;
   border-radius: 5px;
+}
+
+section.projects p {
+  display: inline-block;
 }
 
 section.projects img:hover {
