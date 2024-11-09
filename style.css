@@ -50,6 +50,7 @@ nav:hover {
 
 nav ul {
   text-align: center;
+  left: 0;
 }
 
 nav li {
@@ -150,8 +151,6 @@ section.projects figcaption {
   top: 20px;
   left: auto;
   text-align: center;
-  /* float: inline-end; */
-  /* margin-left: 11em; */
   border: 0.1em solid black;
   padding: 5px;
   }
@@ -173,24 +172,32 @@ section.projects figcaption {
 
 
   nav ul {
-
+    padding: 3px;        /* Removes the default padding */
+    margin: 0 auto;         /* Removes the default margin */
+    list-style: none;  /* Removes bullets from the list */
+    width: 100%;       /* Ensures the ul takes up the full width */
+    display: flex;     /* Ensures flex layout is active */
+    justify-content: space-around;  /* Aligns the items to the start */
     flex-flow: row;
+    width: max-content;
+
 
   }
 
   nav li {
     justify-content: flex-start;
-    display: inline-flex;
-    padding: 0.2em;
-    margin: 0 0;
+    display: inline-block;
+    flex-wrap: nowrap;
+    padding: 0.3em;
+    margin: 0 1px;
     left: 0;
     background-color: rgb(206, 187, 16);
     list-style: none;
     width: fit-content;
-    text-align: center;
-    border: 0.5px solid rgb(217, 228, 224);
+    text-align: left;
+    border: 0.3px solid rgb(217, 228, 224);
     border-radius: 2px;
-    font-size: 0.8em;
+    font-size: 0.7em;
   }
   
   nav li:hover {
