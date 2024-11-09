@@ -213,17 +213,12 @@ section.projects figcaption {
     line-height: 150%;
   }
   
-  .intro p:hover {
-    background-color: rgb(14, 235, 165);
-  }
+
   
   nav a {
     text-decoration: none;
   }
-  
-  nav a:hover {
-    color: rgb(7, 103, 32);
-  }
+
   
   
   
