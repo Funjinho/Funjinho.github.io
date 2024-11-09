@@ -15,16 +15,19 @@ body {
 
 }
 h1.title {
+  top: 20px;
   font-family: "Exo 2";
   font-size: 3em;
   font-weight: normal;
-  width: 10em;
+  width: fit-content;
   position: relative;
   left: auto;
   text-align: center;
   /* float: inline-end; */
   /* margin-left: 11em; */
-  border: 0.3em solid black;
+  border: 3px solid rgb(78, 74, 74);
+  padding: 20px;
+  border-radius: 10px;
 }
 
 p {
