@@ -1,3 +1,10 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;  /* Ensures body takes full height */
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Exo 2", Tahoma, Geneva, Verdana, sans-serif;
   background-image: url(./pattern1.jfif);
@@ -28,10 +35,10 @@ nav {
   /* background-image: url("./flowerpattern.jfif"); */
   height: 40em;
   background-color: rgba(165, 42, 42, 0.656);
-  float: left;
   position: fixed;
+  left: 0;
   border-radius: 10px;
-  top: 4.3%;
+  top: 8%;
 }
 
 nav:hover {
@@ -145,20 +152,30 @@ section.projects figcaption {
   }
 
   nav {
-    height: 20em;
-    background-color: rgb(165, 42, 42);
-    float: left;
-    position: fixed;
+    position: fixed;   /* Keeps the nav fixed in place */
+    bottom: 0;         /* Positions it at the bottom of the page */
+    left: 0;           /* Ensures it stretches from the left edge */
+    width: 100%;       /* Ensures it spans the full width */
+    height: 5em;       /* Keeps the height as you specified */
+    background-color: rgb(165, 42, 42); /* Your background color */
     border-radius: 1px;
+    z-index: 10;       /* Ensures it's on top of other elements */
+    display: flex;
+    justify-content: center; /* Aligns content within the nav */
+    align-items: center;     /* Vertically centers content */
+    top: 62%;
+}
 
-  }
 
   nav ul {
-    text-align: left;
+
+    flex-flow: row;
+
   }
 
   nav li {
-    display: inline-block;
+    justify-content: space-around;
+    display: inline-flex;
     padding: 1.5em;
     margin: 0 auto;
     background-color: rgb(206, 187, 16);
@@ -176,7 +193,7 @@ section.projects figcaption {
     box-sizing: border-box;
     width: 20%;
     height: fit-content;
-    margin: 2em 32%;
+    margin: 0 auto;
   }
   
   .intro p {
@@ -185,7 +202,7 @@ section.projects figcaption {
     width: 25em;
     height: fit-content;
     background-color: rgb(41, 183, 138);
-    display: inline-block;
+    display: block;
     border: 0.5em solid black;
     padding: 0.3em;
     border-radius: 10px;
