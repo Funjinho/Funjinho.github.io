@@ -31,6 +31,7 @@ nav {
   float: left;
   position: fixed;
   border-radius: 10px;
+  top: 4.3%;
 }
 
 nav:hover {
@@ -133,7 +134,7 @@ section.projects figcaption {
   h1.title {
   font-size: 1em;
   font-weight: normal;
-  width: 3em;
+  width: 20%;
   position: relative;
   left: auto;
   text-align: center;
@@ -143,25 +144,93 @@ section.projects figcaption {
   }
 
   nav {
-    height: 10em;
-    background-color: rgba(165, 42, 42, 0.656);
+    height: 20em;
+    background-color: rgb(165, 42, 42);
     float: left;
     position: fixed;
     border-radius: 1px;
+
+  }
+
+  nav ul {
+    text-align: left;
   }
 
   nav li {
-    text-align: center;
-    padding: 0.5em;
-    margin: 1em;
-    background-color: rgba(240, 230, 140, 0.652);
+    display: inline-block;
+    padding: 1.5em;
+    margin: 0 auto;
+    background-color: rgb(206, 187, 16);
     list-style: none;
-    width: 70%;
+    width: 5em;
     text-align: center;
-    border: 1px solid rgba(201, 17, 17, 0.981);
-    border-radius: 3px;
-    font-size: 0.3em;
+    border: 0.5px solid rgb(217, 228, 224);
+    border-radius: 2px;
+    font-size: 0.8em;
   }
-
-
+  
+  
+  
+  .intro {
+    box-sizing: border-box;
+    width: 20%;
+    margin: 2em 32%;
+  }
+  
+  .intro p {
+    font-size: 7px;
+    color: rgb(3, 15, 10);
+    width: 20em;
+    background-color: rgb(41, 183, 138);
+    display: inline-block;
+    border: 0.5em solid black;
+    padding: 0.3em;
+    border-radius: 10px;
+    /* margin: 5em 5em; */
+    line-height: 150%;
+  }
+  
+  .intro p:hover {
+    background-color: rgb(14, 235, 165);
+  }
+  
+  nav a {
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    color: rgb(7, 103, 32);
+  }
+  
+  
+  
+  section.projects {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
+    
+  }
+  
+  section.projects figure img {
+    width: 200px;
+    height: 100px;
+    border-radius: 5px;
+  }
+  
+  section.projects p {
+    display: inline-block;
+  }
+  
+  section.projects img:hover {
+    width: 300px;
+    height: 150px;
+    border-radius: 5px;
+    border: 5px solid rgb(203, 112, 20);
+  }
+  
+  section.projects figcaption {
+    text-align: center;
+  }
 }
