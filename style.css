@@ -155,7 +155,7 @@ section.projects figcaption {
 
   nav {
     position: fixed;   /* Keeps the nav fixed in place */
-    bottom: 280px;         /* Positions it at the bottom of the page */
+    bottom: 0;         /* Positions it at the bottom of the page */
     left: 0;           /* Ensures it stretches from the left edge */
     width: 100%;       /* Ensures it spans the full width */
     height: 3em;       /* Keeps the height as you specified */
@@ -243,6 +243,10 @@ section.projects figcaption {
     margin-right: 10%;
     padding: 2em;
     
+  }
+
+  section.projects figure {
+    border: .3px solid grey;
   }
   
   section.projects figure img {
