@@ -58,6 +58,7 @@ nav li:hover {
   background-color: rgb(240, 230, 140);
   font-weight: bold;
   border: 1px double green;
+  width: 100%;
 }
 
 .intro {
