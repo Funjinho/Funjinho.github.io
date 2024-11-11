@@ -8,6 +8,7 @@ html, body {
 body {
   font-family: "Exo 2", Tahoma, Geneva, Verdana, sans-serif;
   background-image: url(./pattern1.jfif);
+  
 }
 
 .title {
@@ -104,7 +105,25 @@ nav a:hover {
   color: rgb(7, 103, 32);
 }
 
+div.donate {
+  display: flex;
+  width: 75%;
+  margin: 150px auto;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  border: 5px solid gold;
+  border-radius: 10px;
+}
 
+div.donate h2{
+  color: goldenrod;
+  display: inline-flex;
+  padding: 3em;
+  width: 100%;
+  justify-content: center;
+  margin: 0 auto;
+  
+}
 
 section.projects {
   display: flex;
