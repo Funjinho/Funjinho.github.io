@@ -16,6 +16,7 @@ nav.desktop ul, a {
   list-style: none;
   text-decoration: none;
   
+  
 }
 
 .center {
@@ -63,16 +64,19 @@ header .logo {
 
 header nav ul {
   display: flex;
+  align-content: center;
 }
 
 nav li {
   padding-left: 3.5rem;
+  font-size: 1.5rem;
+
 }
 
 nav a {
-  vertical-align: bottom;
+  vertical-align:middle;
   line-height: 1.6;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #4a4a4a;
 }
 
@@ -122,8 +126,8 @@ header .mobile {
 
 #sign-up-section {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content:safe;
+  align-items: center;
   height: 43.5rem;
 }
 
