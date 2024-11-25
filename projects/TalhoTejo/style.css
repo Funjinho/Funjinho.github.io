@@ -1,20 +1,25 @@
 /* Resets user style agent */
 html,
 body {
+  background-color: antiquewhite;
   margin: 0;
   padding: 0;
   height: 100%; /* Ensures body takes full height */
   box-sizing: border-box;
-  font-family: 'Roboto Slab', 'Tahoma';
-  font-size: 16px;
+  font-family: "Roboto Slab", "Tahoma";
+  font-size: 12px;
 }
 
 nav {
+  display: flex;
+  justify-content: center;
   width: 100%;
-  height: 60px;
+  height: 5rem;
   background-color: rgba(165, 42, 42);
   position: fixed;
+  z-index: 10;
   top: 0;
+  flex-shrink: 3;
 }
 
 nav ul {
@@ -25,45 +30,153 @@ nav ul {
   list-style: none;
   padding: 10px;
   color: bisque;
+  flex-shrink: 3;
 }
 
 nav ul li {
-    padding: 10px;
-    margin: 5px 8px;
-    border-radius: 5px;
-    background-color: rgb(255, 255, 255);
+  height: fit-content;
+  width: 10rem;
+  padding: 0.8rem;
+  margin: 0 1rem;
+  border-radius: 5px;
+  background-color: antiquewhite;
+  text-align: center;
+  font-size: 1.5rem;
+  flex-shrink: 2;
 }
 
-h1 {
-    display: flex;
-    margin-top: 5%;
-    margin-left: auto;
-    font-size: x-large;
-    color: rgba(165, 42, 42);
-    font-size: 30px;
-    justify-content: space-around;
+nav ul li a {
+  text-decoration: none;
+  
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+header h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  color: rgba(165, 42, 42);
+  font-size: 3rem;
+  flex-shrink: 3;
+}
+
+header img {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
 }
 
 main {
-    margin: 15% auto;
-    display: flex;
-    flex-direction: row;
-    width: 70%;
+  margin: 2% auto;
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  flex-wrap: wrap;
+  flex-shrink: 2;
+  justify-content: center;
 }
 
 main figure {
-    justify-content: center;
+  justify-content: center;
 }
 
 main figcaption {
-    font-family: 'Roboto Slab', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 2rem;
-    text-align: center;
+  font-family: "Roboto Slab", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+  text-align: center;
 }
 
 main img {
-    display: inline-flex;
-    height: 20rem;
-    width: 20rem;
-    flex-shrink: 2;
+  display: inline-flex;
+  height: 20rem;
+  width: 20rem;
+  flex-shrink: 2;
+}
+
+/* Ruleset for mobile phones*/
+
+@media only screen and (min-width: 320px) and (max-width: 500px) {
+  /* ruleset for 320px - 480px */
+
+  body {
+    font-size: 12px;
+  }
+
+  header img {
+    display: none;
+  }
+
+  main {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  header {
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    margin-top: 0;
+    top: 0;
+    padding-bottom: 4rem;
+  }
+  header h1 {
+    justify-content: center;
+    margin-top: 0;
+    color: white;
+    background-color: rgb(165, 42, 42);
+    font-size: 3rem;
+    flex-shrink: 3;
+  }
+
+  nav {
+    position: fixed; /* Keeps the nav fixed in place */
+    bottom: 0; /* Positions it at the bottom of the page */
+    left: 0; /* Ensures it stretches from the left edge */
+    width: 100%; /* Ensures it spans the full width */
+    height: 2em; /* Keeps the height as you specified */
+    background-color: rgb(165, 42, 42); /* Your background color */
+    border-radius: 1px;
+    z-index: 10; /* Ensures it's on top of other elements */
+    justify-content: space-around; /* Aligns content within the nav */
+    align-items: center; /* Vertically centers content */
+    top: auto;
+  }
+
+  nav ul {
+    padding: 3px; /* Removes the default padding */
+    margin: 5px auto; /* Removes the default margin */
+    list-style: none; /* Removes bullets from the list */
+    width: 100%; /* Ensures the ul takes up the full width */
+    display: flex; /* Ensures flex layout is active */
+    justify-content: space-around; /* Aligns the items to the start */
+    flex-flow: row;
+    width: max-content;
+  }
+
+  nav ul li {
+    display: flex;
+    justify-content: center;
+    display: inline-block;
+    flex-wrap: nowrap;
+    padding: 0 0.3rem;
+    margin: 0 0.2rem;
+    width: fit-content;
+    left: 0;
+    background-color: rgb(206, 187, 16);
+    list-style: none;
+    text-align: left;
+    border: 0.3px solid rgb(217, 228, 224);
+    border-radius: 2px;
+    font-size: 1.2em;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
 }
