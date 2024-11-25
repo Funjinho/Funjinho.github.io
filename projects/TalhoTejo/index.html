@@ -54,7 +54,37 @@
     </main>
 
     <footer>
-        <h3>Copyright nuff 2024</h3>
+      <div id="current-time">
+        <script>
+          function updateTime() {
+            const currentTimeElement = document.getElementById("current-time");
+            const now = new Date();
+            const hours = now.getHours();
+            const minutes = now.getMinutes();
+            const seconds = now.getSeconds();
+
+            // Format time with leading zeros
+            const formattedTime =
+              (hours < 10 ? "0" : "") +
+              hours +
+              ":" +
+              (minutes < 10 ? "0" : "") +
+              minutes +
+              ":" +
+              (seconds < 10 ? "0" : "") +
+              seconds;
+
+            currentTimeElement.textContent = formattedTime;
+          }
+
+          // Update time immediately when the page loads
+          updateTime();
+
+          // Update the time every second
+          setInterval(updateTime, 1000);
+        </script>
+      </div>
+      <h3>Copyright nuff 2024</h3>
     </footer>
   </body>
 </html>
