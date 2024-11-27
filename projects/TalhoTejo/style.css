@@ -106,10 +106,10 @@ footer {
   background-color: rgba(0, 0, 0, 0.222);
   color: blanchedalmond;
   text-align: right;
-  padding: 1rem 1rem 1rem 1rem;
+  padding: 0.8rem 0.8rem;
   margin-bottom: 0;
   justify-content: space-between;
-  align-content: center;
+ 
   align-items: center;
 }
 
@@ -199,7 +199,14 @@ footer {
     text-align: left;
     border: 0.3px solid rgb(217, 228, 224);
     border-radius: 2px;
-    font-size: 1.2em;
+    font-size: 1.5em;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  footer div script {
+    margin-left: 0;
+    padding-left: 0;
+    justify-content: flex-start;
+    
   }
 }
