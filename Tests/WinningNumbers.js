@@ -33,3 +33,10 @@ console.log(`Isaac, ${getMyWinningNumbers()}`.toUpperCase());
 
 console.log('Best of Luck!')
 
+
+const keys = [16 , 8 , 2 , 49 , 41]
+
+for (const key of keys) {
+    console.log(key);
+}
+
