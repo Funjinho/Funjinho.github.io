@@ -40,3 +40,8 @@ for (const key of keys) {
     console.log(key);
 }
 
+const nums = [1, 2, 3];
+
+for (const num of nums) {
+    console.log(num);
+}
