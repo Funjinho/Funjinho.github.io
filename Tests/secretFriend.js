@@ -1,4 +1,4 @@
-const family = ['Sara', 'Nuno', 'Susana', 'Bertina', 'Deolinda', 'Tozé'];
+const family = ['Sara', 'Nuno', 'Susana', 'Bertina', 'Deolinda', 'Tozé', 'António'];
 
 function getSecretFriend(friendList) {
   const availableFriends = [...friendList]; // Create a copy
