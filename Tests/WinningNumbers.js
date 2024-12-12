@@ -74,7 +74,6 @@ function getWeightedRandom() {
 }
 
 // Test weighted
-console.log(getWeightedRandom());
 
 // Stars Section
 const randomStars = [
@@ -110,12 +109,9 @@ function getWeightedStar() {
     }
 }
 
-// Test weighted
-console.log(getWeightedStar());
 
 
-console.log('Abracadabra, pata de cabra'.toUpperCase());
-function getMyWinningNumbers () {
+function getMyWinningNumbers (name) {
     let first = getWeightedRandom();
     let second = getWeightedRandom();
     let third = getWeightedRandom();
@@ -123,39 +119,57 @@ function getMyWinningNumbers () {
     let fifth = getWeightedRandom();
     let star1 = getWeightedStar();
     let star2 = getWeightedStar();
-    if (first === second || first === third || first === fourth || first === fifth) {
+    while (first === second || first === third || first === fourth || first === fifth) {
         first = getWeightedRandom();
-    } else if (second === third || second === fourth || second === fifth) {
+    } 
+    while (second === third || second === fourth || second === fifth) {
         second = getWeightedRandom();
-    } else if (third === fourth || third === fifth) {
+    } 
+    while (third === fourth || third === fifth) {
         third = getWeightedRandom();
-    } else if (fourth === fifth) {
+    } 
+    while (fourth === fifth) {
         third = getWeightedRandom();
-    } else if (star1 === star2) {
+    } 
+   
+    while (star1 === star2){
         star1 = getWeightedStar();
     }
 
+    
+    let luckyFive = [first, second, third, fourth, fifth];
+    luckyFive.sort((a, b) => a - b);
 
-
-    return `Your numbers are: ${first} , ${second} , ${third} , ${fourth} , ${fifth} , and your Stars are: ${star1} , ${star2} , GOOD LUCK!!!`;
+    let luckyStarz = [star1, star2];
+    luckyStarz.sort((a, b) => a - b) 
+    // return `Your Lucky Numbers are ${luckyFive} and Your Lucky Stars are ${luckyStarz}` 
+    
+    console.log(name + ', your lucky numbers are:'); 
+    console.log(luckyFive); 
+    console.log('and your lucky stars are:');
+    console.log(luckyStarz);
+    
+    return 'Good Luck!'
+    
+    // return 'Your numbers are: ' + first + ', ' + second + ', ' + third + ', ' + fourth + ', ' + fifth + '. and your Stars are: ' + star1 + ' and ' + star2 + ' , GOOD LUCK!!!';
 }
 
-console.log(`Nuno, ${getMyWinningNumbers()}`.toUpperCase());
-console.log(`Susana, ${getMyWinningNumbers()}`.toUpperCase());
-console.log(`Aurora, ${getMyWinningNumbers()}`.toUpperCase());
-console.log(`Isaac, ${getMyWinningNumbers()}`.toUpperCase());
+let players = ['Susana', 'Nuno', 'Aurora', 'Isaac'];
+let workers = ['Julie', 'Mariana', 'Anabela', 'Stephane', 'Nuno']
 
-console.log('Best of Luck!')
+for (i= 0; i < players.length; i++) {
 
+let mantra = ['Health', 'Peace', 'Love', 'Happiness', 'Prosperity', 'Wisdom', 'Abundance'];
 
-const keys = [16 , 8 , 2 , 49 , 41]
+    getMyWinningNumbers(players[i])
+    console.log('May You Be Blessed With ' + mantra.toString());
 
-for (const key of keys) {
-    console.log(key);
 }
 
-const nums = [1, 2, 3];
-
-for (const num of nums) {
-    console.log(num);
+for (i=0; i < workers.length; i++) {
+    getMyWinningNumbers(workers[i])
 }
+
+
+
+
