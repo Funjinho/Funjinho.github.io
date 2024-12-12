@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+         width: 100%;
+         background-color: #831C1C;
+         font-family: Biome;
+         color: #0E3778;
+       }
+       
+       div {
+         max-width: 30%;
+         color: black;
+         background: #D1CAC0;
+         border: 1px solid black;
+         border-radius: 10px;
+         font-size: 12px;
+       }
+       
+       ul {
+         max-width: 30%; 
+         list-style: none; 
+       }
+       
+       li {
+         display: inline-block; 
+         white-space: nowrap;
+         margin-right: 10px;
+       }
+       
+       table {
+         background-color: #FFD966;
+         width: 75%;
+         border-radius: 10px;
+         font-family: Consolas;
+         margin: 0 auto;
+       }
+       
+       th, td {
+         padding: 10px;
+         border: 3px solid black;
+       }
+       
+       th {
+         background-color: #44546A;
+         color: #FFFFFF;
+       }
+       
+       td {
+         color: #000000;
+       }
+         </style>
+       <hr>
+         <h1 style="color:white; font-family:Biome">Alerte Crise Opérationnelle</h1>
+       <hr>
+       <br>
+       <div>
+       <ul>
+       <li>Stations Essence fermée? : @{outputs('Send_Major_Incident_Info_Form')?['body/data/station_closed']}.</li>
+       <li>Incidence de la banque électronique? : @{outputs('Send_Major_Incident_Info_Form')?['body/data/banking_impact']}.</li>
+       <li>Prise en main à distance toujours possible? : @{outputs('Send_Major_Incident_Info_Form')?['body/data/pmad_possible']}.</li>
+       <li>Conséquences d'une mise à jour / maintenance? : @{outputs('Send_Major_Incident_Info_Form')?['body/data/post_update']}.</li>
+       <li>Appeler DSI (en HNO)? : @{outputs('Send_Major_Incident_Info_Form')?['body/data/hno']}.</li>
+       <li>Outil utilisé pour diagnostique: @{outputs('Send_Major_Incident_Info_Form')?['body/data/diag_tools']}.</li>
+       </ul>
+       </div>
+       <br>
+       <hr>
+       <br>
+         <table>
+           <tbody><tr>
+             <th>Alerte</th>
+             <td>@{body('Send_Major_Incident_Info_Form')?['data']?['alerte']}</td>
+           </tr>
+           <tr>
+             <th>Date Détection</th>
+             <td>@{formatDateTime(outputs('Send_Major_Incident_Info_Form')?['body/data/detectedDate'], 'dd-MM-yyyy')}</td>
+           </tr>
+           <tr>
+             <th>Heure Détection</th>
+             <td>@{body('Send_Major_Incident_Info_Form')?['data']?['detectedTime']}</td>
+           </tr>
+           <tr>
+             <th>Incident Parent</th>
+             <td>@{body('Send_Major_Incident_Info_Form')?['data']?['incident_Parent']}</td>
+           </tr>
+           <tr>
+             <th>Domaine/Service</th>
+             <td>@{body('Send_Major_Incident_Info_Form')?['data']?['domaine']}</td>
+           </tr>
+           <tr>
+             <th>Details</th>
+             <td>@{body('Send_Major_Incident_Info_Form')?['data']?['impact_details']}</td>
+           </tr>
+           <tr>
+             <th>Statut</th>
+             <td>@{body('Send_Major_Incident_Info_Form')?['data']?['current_status']}</td>
+           </tr>
+           <tr>
+             <th>Charge Reçue</th>
+             <td>@{body('Send_Major_Incident_Info_Form')?['data']?['tickets_received']}</td>
+           </tr>
+           <tr>
+             <th>Date Point Crise</th>
+             <td>@{formatDateTime(outputs('Send_Major_Incident_Info_Form')?['body/data/next_update_date'], 'dd-MM-yyyy')}</td>
+           </tr>
+           <tr>
+             <th>Heure Point Crise (FR)</th>
+             <td>@{body('Send_Major_Incident_Info_Form')?['data']?['next_update_time']}</td>
+           </tr>
+         </tbody></table>
+       
+       
+       
+</body>
+</html>
