@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lottery Number Generator</title>
+<style>
+body {
+  font-family: sans-serif;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.ball {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 2px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.star-ball {
+  background-color: gold; /* Change color as needed */
+}
+.second-star-ball {
+  background-color: #FFD700; /* Change color as needed */
+}
+
+</style>
+</head>
+<body>
+
+<h1>Lottery Number Generator</h1>
+<button id="generateNumbers">Generate Numbers</button>
+<div id="results"></div>
+<button id="generateNumbers">Generate Numbers</button>
+<button id="registerResults">Register Results</button>
+<div id="results"></div>
+
+<script>
+// Array of numbers and their weights
+const items = [
+    {value: 1, weight: 172},
+    {value: 2, weight: 171},
+    {value: 3, weight: 175},
+    {value: 4, weight: 182},
+    {value: 5, weight: 181},
+    {value: 6, weight: 173},
+    {value: 7, weight: 187},
+    {value: 8, weight: 166},
+    {value: 9, weight: 168},
+    {value: 10, weight: 193},
+    {value: 11, weight: 183},
+    {value: 12, weight: 183},
+    {value: 13, weight: 181},
+    {value: 14, weight: 181},
+    {value: 15, weight: 188},
+    {value: 16, weight: 181},
+    {value: 17, weight: 196},
+    {value: 18, weight: 160},
+    {value: 19, weight: 201},
+    {value: 20, weight: 192},
+    {value: 21, weight: 199},
+    {value: 22, weight: 143},
+    {value: 23, weight: 206},
+    {value: 24, weight: 176},
+    {value: 25, weight: 188},
+    {value: 26, weight: 190},
+    {value: 27, weight: 188},
+    {value: 28, weight: 174},
+    {value: 29, weight: 192},
+    {value: 30, weight: 180},
+    {value: 31, weight: 171},
+    {value: 32, weight: 170},
+    {value: 33, weight: 155},
+    {value: 34, weight: 184},
+    {value: 35, weight: 186},
+    {value: 36, weight: 168},
+    {value: 37, weight: 191},
+    {value: 38, weight: 188},
+    {value: 39, weight: 176},
+    {value: 40, weight: 164},
+    {value: 41, weight: 155},
+    {value: 42, weight: 197},
+    {value: 43, weight: 165},
+    {value: 44, weight: 202},
+    {value: 45, weight: 185},
+    {value: 46, weight: 156},
+    {value: 47, weight: 161},
+    {value: 48, weight: 175},
+    {value: 49, weight: 178},
+    {value: 50, weight: 198},
+
+];
+
+// Calculate the total weight
+const totalWeight = items.reduce((accumulator, item) => accumulator + item.weight, 0);
+
+// Generate a weighted random selection
+function getWeightedRandom() {
+    const randomNum = Math.random() * totalWeight; // random number between 0 and totalWeight
+
+    let cumulativeWeight = 0;
+
+    for (let i = 0; i < items.length; i++) {
+        cumulativeWeight += items[i].weight;
+        if (randomNum < cumulativeWeight) {
+            return items[i].value;
+        }
+
+    }
+}
+
+// Stars Section
+const randomStars = [
+    {value: 1, weight: 312},
+    {value: 2, weight: 357},
+    {value: 3, weight: 364},
+    {value: 4, weight: 290},
+    {value: 5, weight: 313},
+    {value: 6, weight: 321},
+    {value: 7, weight: 322},
+    {value: 8, weight: 346},
+    {value: 9, weight: 329},
+    {value: 10, weight: 249},
+    {value: 11, weight: 242},
+    {value: 12, weight: 145},
+];
+
+// totalweight for stars
+const starWeight = randomStars.reduce((sum, randomStars) => sum + randomStars.weight, 0);
+
+// Generate a weighted random selection for Stars
+function getWeightedStar() {
+    const randomStar = Math.random() * starWeight; // random number between 0 and totalWeight
+
+    let cumulativeWeight = 0;
+
+    for (let i = 0; i < randomStars.length; i++) {
+        cumulativeWeight += randomStars[i].weight;
+        if (randomStar < cumulativeWeight) {
+            return randomStars[i].value;
+        }
+
+    }
+}
+
+
+
+function getMyWinningNumbers(name) {
+    let first = getWeightedRandom();
+    let second = getWeightedRandom();
+    let third = getWeightedRandom();
+    let fourth = getWeightedRandom();
+    let fifth = getWeightedRandom();
+    let star1 = getWeightedStar();
+    let star2 = getWeightedStar();
+    while (first === second || first === third || first === fourth || first === fifth) {
+        first = getWeightedRandom();
+    } 
+    while (second === third || second === fourth || second === fifth) {
+        second = getWeightedRandom();
+    } 
+    while (third === fourth || third === fifth) {
+        third = getWeightedRandom();
+    } 
+    while (fourth === fifth) {
+        third = getWeightedRandom();
+    } 
+   
+    while (star1 === star2){
+        star1 = getWeightedStar();
+    }
+
+    
+    let luckyFive = [first, second, third, fourth, fifth];
+    luckyFive.sort((a, b) => a - b);
+
+    let luckyStarz = [star1, star2];
+    luckyStarz.sort((a, b) => a - b) 
+    
+    return {luckyFive, luckyStarz}; //Modified to return an object
+}
+
+// Function to update weights based on winning numbers
+function updateWeights(winningNumbers) {
+    if (winningNumbers.length !== 7) {
+        console.error("Invalid input: Winning numbers array must have 7 elements (5 numbers + 2 stars).");
+        return;
+    }
+
+    const numbers = winningNumbers.slice(0, 5);
+    const stars = winningNumbers.slice(5, 7);
+
+    // Update weights for numbers
+    numbers.forEach(num => {
+        const itemIndex = items.findIndex(item => item.value === num);
+        if (itemIndex !== -1) {
+            items[itemIndex].weight++;
+        } else {
+            console.warn(`Number ${num} not found in the items array.`);
+        }
+    });
+
+    // Update weights for stars
+    stars.forEach(star => {
+        const starIndex = randomStars.findIndex(starItem => starItem.value === star);
+        if (starIndex !== -1) {
+            randomStars[starIndex].weight++;
+        } else {
+            console.warn(`Star ${star} not found in the randomStars array.`);
+        }
+    });
+
+    // Recalculate total weights (important!)
+    const totalWeight = items.reduce((accumulator, item) => accumulator + item.weight, 0);
+    const starWeight = randomStars.reduce((sum, star) => sum + star.weight, 0);
+
+    console.log("Weights updated successfully!");
+    console.log("items:", items);
+    console.log("randomStars:", randomStars);
+
+}
+
+
+// Add event listener for the new button
+document.getElementById('registerResults').addEventListener('click', () => {
+    const winningNumbersInput = prompt("Enter the winning numbers (5 numbers, then 2 stars, separated by commas):");
+
+    if (winningNumbersInput === null) { //User cancelled
+        return;
+    }
+
+    const winningNumbers = winningNumbersInput.split(',').map(Number);
+    updateWeights(winningNumbers);
+});
+
+document.getElementById('generateNumbers').addEventListener('click', () => {
+  const resultsDiv = document.getElementById('results');
+  resultsDiv.innerHTML = ''; // Clear previous results
+
+  let players = ['Susana', 'Nuno', 'Aurora', 'Isaac', 'Filipa', 'Joana'];
+  let mantra = ['Health', 'Peace', 'Love', 'Happiness', 'Prosperity', 'Wisdom', 'Abundance'];
+
+  for (let i = 0; i < players.length; i++) {
+    const numbers = getMyWinningNumbers(players[i]);
+
+    const playerDiv = document.createElement('div');
+    playerDiv.innerHTML = `<h2>${players[i]}</h2>`;
+
+    //Display Numbers
+    const numberContainer = document.createElement('div');
+    numberContainer.classList.add('container');
+    numbers.luckyFive.forEach(num => {
+      const ball = document.createElement('div');
+      ball.classList.add('ball');
+      ball.textContent = num;
+      numberContainer.appendChild(ball);
+    });
+    playerDiv.appendChild(numberContainer);
+
+
+    //Display Stars
+    const starContainer = document.createElement('div');
+    starContainer.classList.add('container');
+    numbers.luckyStarz.forEach((num, index) => {
+      const ball = document.createElement('div');
+      ball.classList.add('ball');
+      ball.classList.add(index === 0 ? 'star-ball' : 'second-star-ball');
+      ball.textContent = num;
+      starContainer.appendChild(ball);
+    });
+    playerDiv.appendChild(starContainer);
+
+    playerDiv.innerHTML += `<p>May You Be Blessed With ${mantra[Math.floor(Math.random() * mantra.length)]}</p>`;
+    resultsDiv.appendChild(playerDiv);
+  }
+});
+</script>
+
+</body>
+</html>

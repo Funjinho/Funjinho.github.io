@@ -154,8 +154,8 @@ function getMyWinningNumbers (name) {
     // return 'Your numbers are: ' + first + ', ' + second + ', ' + third + ', ' + fourth + ', ' + fifth + '. and your Stars are: ' + star1 + ' and ' + star2 + ' , GOOD LUCK!!!';
 }
 
-let players = ['Susana', 'Nuno', 'Aurora', 'Isaac'];
-let workers = ['Julie', 'Mariana', 'Anabela', 'Stephane', 'Nuno']
+let players = ['Susana', 'Nuno', 'Aurora', 'Isaac', 'Filipa', 'Joana'];
+// let workers = ['Julie', 'Mariana', 'Anabela', 'Stephane', 'Nuno']
 
 for (i= 0; i < players.length; i++) {
 
@@ -166,9 +166,9 @@ let mantra = ['Health', 'Peace', 'Love', 'Happiness', 'Prosperity', 'Wisdom', 'A
 
 }
 
-for (i=0; i < workers.length; i++) {
-    getMyWinningNumbers(workers[i])
-}
+// for (i=0; i < workers.length; i++) {
+//     getMyWinningNumbers(workers[i])
+// }
 
 
 
