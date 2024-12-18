@@ -49,3 +49,14 @@ function setInstrument(instr) {
   console.log(instrument); 
 } 
 setInstrument("cello");
+
+let array1 = ['A', 'B', 'C', 'D', 'E', 'F']
+let randomIndex =(Math.floor(Math.random()* 5))
+while (array1[randomIndex] === 'B'){
+array1[randomIndex] = array1[randomIndex][Math.floor(Math.random() * 5)]
+
+} 
+  
+  console.log(array1[3])
+  console.log(array1)
+
