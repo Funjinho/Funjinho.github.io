@@ -70,44 +70,51 @@ sumArray.shift(0)
 
 }
 
-// validateCred(mystery4)
+
     
-    
- 
-// function findInvalidCards(batchArray) {
-//     let invalidArray = [];
-//     for (i=0; i <= batchArray.length; i++ ){
-//         console.log(batchArray[i]);
-//         console.log(validateCred(batchArray[i]));
-        
-        
-//     //   if (validateCred(batchArray[i]) === 'Invalid') {
-//     //     invalidArray.push(i);
-//     //   }
-//     // }
-//     // console.log(invalidArray);
-    
-//   }    
-// }
+
+let invalidArray = []; // Declare invalidArray outside the loop
     
 const findInvalidCards = (nestedArray) => {
-  const invalidArray = []; // Declare invalidArray outside the loop
+  
 
   for (let i = 0; i < nestedArray.length; i++) {
     const currentArray = nestedArray[i];
     console.log("Checking:", currentArray); // Check what's being passed to validateCred
 
     if (!validateCred(currentArray)) { //Check if validateCred returns false
+      console.log('Array is invalid');
       invalidArray.push(currentArray); // Add the invalid card to invalidArray
     }
   }
-  console.log(invalidArray);
+  
 };
  
 
 findInvalidCards(batch);   
+console.log(invalidArray); 
+let invalidCompanies =  new Set();
     
+function idInvalidCardCompanies(invalidNumbers) {
+  for (i=0; i < invalidNumbers.length; i++) {
+    let firstDigit = invalidNumbers[i][0];
+    if (firstDigit === 3) {
+      invalidCompanies.add('Amex');
+    } else if (firstDigit === 4) {
+      invalidCompanies.add('Visa');
+    } else if (firstDigit === 4) {
+      invalidCompanies.add('MasterCard');
+    } else if (firstDigit === 6) {
+      invalidCompanies.add('Discover');
+    } else {
+      invalidCompanies.add('Company not found');
+
+    }
     
-    
-  
+  }
+  console.log(invalidCompanies);
+}
+
+
+console.log(idInvalidCardCompanies(invalidArray));
  
