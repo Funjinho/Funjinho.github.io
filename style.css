@@ -131,7 +131,7 @@ section.projects {
   display: flex;
   justify-content: space-between;
   margin-top: 10%;
-  margin-left: 10%;
+  margin-left: 8%;
   margin-right: 20%;
   
 }
@@ -267,8 +267,8 @@ section.projects figcaption {
     display: flex;
     justify-content: space-around;
     margin-top: 10%;
-    margin-left: 0;
-    margin-bottom: auto;
+    margin-left: 10%;
+    margin-bottom: 10%;
     flex-wrap: wrap;
     margin-right: 10%;
     padding: 2em;
