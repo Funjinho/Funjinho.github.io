@@ -5,12 +5,54 @@
 <style>
 body {
   font-family: sans-serif;
+  background-color: #dadede;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 36px;
+    color: #0a935e;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 32px;
+    color: #3111d0;
+    background-color: #0ed80b91;
+}
+
+p {
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 28px;
+    color: #e1480c;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #0dd8ac;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
+
+div {
+    display: block;
+  text-align: center;
+}
+
 .ball {
   width: 40px;
   height: 40px;
@@ -38,7 +80,6 @@ body {
 <h1>Lottery Number Generator</h1>
 <button id="generateNumbers">Generate Numbers</button>
 <div id="results"></div>
-<button id="generateNumbers">Generate Numbers</button>
 <button id="registerResults">Register Results</button>
 <div id="results"></div>
 
