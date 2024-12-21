@@ -267,7 +267,8 @@ section.projects figcaption {
     display: flex;
     justify-content: space-around;
     margin-top: 10%;
-    margin-left: 10%;
+    margin-left: 0;
+    margin-bottom: auto;
     flex-wrap: wrap;
     margin-right: 10%;
     padding: 2em;
